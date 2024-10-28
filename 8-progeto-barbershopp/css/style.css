@@ -1,0 +1,433 @@
+:root{
+    --color-primary:#917758;
+    --color-secondary:#3c2915;
+    --color-primary-light:#f5eee6;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    /* background-color: red; */
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* *************
+*      Home
+****************/
+
+.home{
+    background-image: url(..//images/bg-home.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+    position:relative;
+}
+
+.home .header .nav ul{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+.home .header{
+    padding: 30px 0px;
+}
+.home .header .nav ul li{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+.home .header .nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 20px;
+
+}
+
+.home .header .nav ul li a:hover{
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+}
+.home .header .nav ul .logo{
+    margin: 0px 30px;
+}
+
+
+/* ******************
+* Home  -  BANNER
+*********************/
+
+.home .banner{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 764px;
+    height: 292px;
+    margin-left: -382px;
+    margin-top:-88px ;
+
+
+}
+
+.home .banner span{
+    display: block;
+}
+
+.home .banner .slogan1{
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    font-size:14px;
+}
+
+.home .banner h1{
+    font-size: 120px;
+}
+
+.home .banner .slogan2{
+    margin-bottom: 15px;
+}
+
+
+/* ************
+*    ABOUT
+***************/
+
+.about{
+    background-color: var(--color-primary);
+}
+
+.about .container{
+    display: flex;
+}
+
+.about .timing{
+    width: 33%;
+    background-image: url(..//images/brush-big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
+.about .timing .overley{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 60px 0px; 
+    width: 100%;
+}
+.about .timing .icon-cut{
+    width: 50px;
+}
+
+.about .timing h3{
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0px auto 30px auto;
+    font-size: 30px;
+}
+.about .timing .text {
+    padding: 10px 0px;
+}
+.about .timing .text::after{
+    content: "•";
+    color: white;
+    display: block;
+    font-size: 25px;
+    margin-top: 15px;
+
+
+}
+.about .timing .text:last-of-type:after{
+    content: "|";
+}
+.about .timing .text h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+.about .timing span{
+    color: white;
+    font-size: 15px;
+    display: block
+}
+.about .experience{
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+.about .experience h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+.about .experience h2::after{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0px;
+}
+.about .experience .text{
+    display: flex;
+    justify-content: space-between;
+}
+.about .experience .text p{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+
+
+/* ***************
+*    SERVICES
+*****************/
+
+.services{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secondary); 
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.services .boxes{
+    margin-top: 50px;
+    display: flex;
+}
+
+.services .box{
+    border: 3px solid var(--color-primary);
+    margin: 30px;
+    padding:50px 40px ;
+}
+.services .box  h4{
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.services .box p{
+    font-size:14px ;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+
+
+/* *****************
+*    APPOINTMENT
+*******************/
+
+.appointment{
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    padding: 100px 0px;
+    background-color: var(--color-primary);
+    height: 100vh;
+}
+
+.appointment h2{
+    margin-bottom: 10px;
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+.appointment img{
+    margin: 0px auto;
+    display: block;
+}
+.appointment form {
+    margin-top: 80px;
+}
+.appointment .personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.appointment  .input-wrapper{
+    width: 100%;
+    margin-right: 50px;
+}
+.appointment  .input-wrapper:last-of-type{
+    margin-right: 0px;
+}
+.appointment  label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment .personal-data input ,
+.appointment .personal-data select,
+.appointment textarea
+{
+    border-radius: 3px;
+    padding:10px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.appointment textarea{
+    height: 100px;
+}
+
+.appointment button{
+    text-transform: uppercase;
+    background-color: var(--color-secondary); 
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+/* *****************
+*    GALLERY
+*******************/
+
+
+
+.gallery{
+    padding: 100px 0px;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2{
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+.gallery img{
+    margin: 0px auto;
+    display: block;
+}
+.gallery .gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 50px auto;
+}
+.gallery .gallery-wrapper div {
+    margin: 6px;
+    border: 10px solid var(--color-primary);
+    width: 33%;
+}
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+
+
+
+/* *****************
+*    LOCATION
+*******************/
+
+
+
+.location{
+    padding: 100px 0px;
+    background-image: url(../images/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .container .head{
+    background-color: #191919;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.location .container .head .info {
+    display: flex;
+    align-items: center;
+}
+.location .container .head .info .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.location .container .head .text{
+    margin-left: 10px;
+}
+.location .container .head .text span{
+    display: block;
+    font-size: 13px;
+}
+
+.location .container .head .text span:first-child{
+    color: silver;
+}
+.location .container .head .text span:last-child{
+    color: white;
+}
+.location .map{
+    width: 100%;
+}
+
+.location .map iframe{
+    width: 100%;
+}
+
+
+
+
+
+/* ************
+*    FOOTER
+***************/
+
+
+.footer{
+    background-color:#191919;
+    color: wheat;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
